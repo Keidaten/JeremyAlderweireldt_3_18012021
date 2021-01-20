@@ -1,6 +1,135 @@
-/* || Reset || */
-/* || End Reset || */
-/* || Global || */
-/* || End Global || */
+/* || Reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* || End Reset */
+/* || Global */
+img {
+  width: 200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.logo,
+.logo > a {
+  font-family: "Shrikhand", cursive;
+  text-decoration: none;
+}
+
+/* || End Global */
+/* || Start Header */
+.header__logo {
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+  position: relative;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.274);
+  z-index: 1;
+}
+.header__location {
+  height: 50px;
+  background: red;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #eaeaea;
+}
+.header__location > * {
+  position: relative;
+  right: 10px;
+}
+.header__city {
+  margin-left: 18px;
+}
+.header__searchBloc {
+  min-height: 287px;
+  text-align: center;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__title {
+  margin: 0 50px;
+  margin-bottom: 15px;
+}
+.header__subtitle {
+  margin: 0 30px;
+  margin-bottom: 30px;
+  font-size: 1em;
+}
+.header__validation {
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 22px;
+  border: none;
+  color: white;
+  font-size: 1em;
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+}
+.header__validation:hover {
+  background: #9356dc;
+  background: linear-gradient(355deg, #ff79da 0%, #9356dc 100%);
+}
+
+/* || End Header */
+/* || Start Main */
+.operation {
+  min-height: 440px;
+}
+
+.results {
+  min-height: 1226px;
+  padding: 0 20px;
+}
+
+.footer {
+  min-height: 197px;
+  padding: 0 20px;
+}
+
+/* || End Main */
 
 /*# sourceMappingURL=style.css.map */
