@@ -31,10 +31,6 @@ time, mark, audio, video {
 
 /* || End Reset */
 /* || Global */
-img {
-  width: 200px;
-}
-
 h1,
 h2,
 h3,
@@ -47,12 +43,12 @@ a {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .logo,
 .logo > a {
   font-family: "Shrikhand", cursive;
-  text-decoration: none;
 }
 
 .home section {
@@ -130,10 +126,7 @@ a {
 /* || Start Main */
 .operation {
   padding: 0 20px;
-  min-height: 440px;
-}
-.operation__title {
-  align-self: start;
+  padding-bottom: 25px;
 }
 .operation__list {
   display: flex;
@@ -184,9 +177,72 @@ a {
 }
 
 .results {
-  min-height: 1226px;
   padding: 0 20px;
+  padding-bottom: 64px;
   background: #f6f6f6;
+}
+.results__title {
+  margin-bottom: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: fit-content(335px);
+  row-gap: 18px;
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .cards {
+    grid-template-columns: fit-content(335px) fit-content(335px);
+    grid-gap: 60px;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+.card__img {
+  height: 174px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  object-position: 50% 100%;
+  display: block;
+}
+.card__img--downPos {
+  object-position: 50% 62%;
+}
+.card__content {
+  display: flex;
+  height: 77px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px 0 14px;
+}
+.card__new {
+  background-color: #99e2d0;
+  width: 80px;
+  height: 29px;
+  color: #008766;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+}
+.card__like {
+  border: none;
+  padding: 0;
+  background-color: inherit;
+  font-size: 25px !important;
+  font-weight: 100 !important;
+  padding-bottom: 8px;
 }
 
 .footer {
