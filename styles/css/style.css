@@ -247,7 +247,34 @@ a {
 
 .footer {
   min-height: 197px;
-  padding: 0 20px;
+  padding: 27px 20px;
+  background-color: #353535;
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    text-align: center;
+    padding-top: 45px;
+  }
+}
+.footer__logo {
+  font-size: 18px;
+}
+.footer__list {
+  list-style: none;
+  line-height: 25px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 992px) {
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+  }
+}
+.footer__icons {
+  width: 22px !important;
+  font-size: 13px;
 }
 
 /* || End Main */
