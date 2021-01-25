@@ -1,0 +1,199 @@
+/* || Start Header */
+.header {
+    &__logo {
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7em;
+        position: relative;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.274);
+        z-index: 1;
+    }
+    &__location {
+        height: 50px;
+        background: red;
+        font-weight: 700;
+        text-align: center;
+        padding: 15px 0;
+        background-color: $tertiary-background-color;
+        & > * {
+            position: relative;
+            right: 10px;
+        }
+    }
+    &__city {
+        margin-left: 18px;
+    }
+    &__searchBloc {
+        min-height: 287px;
+        text-align: center;
+        background: $secondary-background-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px !important;
+    }
+    &__title {
+        margin: 0 50px;
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        margin: 0 30px;
+        margin-bottom: 30px;
+        font-size: 1em;
+    }
+    &__validation {
+        @include button();
+    }
+}
+
+/* || End Header */
+
+/* || Start Main */
+
+.operation {
+    padding: 0 20px;
+    padding-bottom: 25px;
+    &__title {
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    &__listItem {
+        position: relative;
+        padding: 0 30px;
+        border-radius: 20px;
+        display: flex;
+        flex-grow: 0.2;
+        align-items: center;
+        justify-content: space-around;
+        height: 72px;
+        margin: 20px 0;
+        margin-left: 10px;
+        background-color: $secondary-background-color;
+        box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.095);
+        counter-increment: counterOperations;
+        &::before {
+            content: "" counter(counterOperations);
+            height: 24px;
+            min-width: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: $primary-color;
+            border-radius: 50px;
+            position: absolute;
+            left: -10px;
+        }
+        &::after {
+            content: "";
+        }
+        &:hover {
+            background-color: lighten($primary-color, 35%);
+        }
+    }
+    &__icon {
+    }
+    &__indication {
+        padding: 0 10px;
+    }
+}
+.results {
+    padding: 0 20px;
+    padding-bottom: 64px;
+    background: $secondary-background-color;
+    &__title {
+        margin-bottom: 25px;
+    }
+}
+.cards {
+    display: grid;
+    grid-template-columns: fit-content(335px);
+    row-gap: 18px;
+    justify-content: center;
+    @media screen and (min-width: 992px) {
+        grid-template-columns: fit-content(335px) fit-content(335px);
+        grid-gap: 60px;
+    }
+}
+.card {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    @include card_style;
+    &__img {
+        height: 174px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 100%;
+        display: block;
+        &--downPos {
+            object-position: 50% 62%;
+        }
+    }
+    &__content {
+        display: flex;
+        height: 77px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px 0 14px;
+    }
+    &__new {
+        background-color: #99e2d0;
+        width: 80px;
+        height: 29px;
+        color: #008766;
+        font-size: 0.8em;
+        font-weight: bold;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 13px;
+        right: 12px;
+    }
+    &__like {
+        @include like_button;
+        padding-bottom: 8px;
+    }
+}
+
+/* || End Main */
+
+/* || Start Footer */
+.footer {
+    min-height: 197px;
+    padding: 27px 20px;
+    background-color: #353535;
+    color: white;
+    @media screen and (min-width: 992px) {
+        text-align: center;
+        padding-top: 45px;
+    }
+    &__logo {
+        font-size: 18px;
+    }
+    &__list {
+        line-height: 25px;
+        margin-top: 15px;
+        @media screen and (min-width: 992px) {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 45px;
+        }
+    }
+    &__icons {
+        width: 22px !important;
+        font-size: 13px;
+    }
+}
+/* || End Footer */

@@ -27,6 +27,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
+  list-style: none;
 }
 
 /* || End Reset */
@@ -46,8 +47,9 @@ a {
   text-decoration: none;
 }
 
-.logo,
-.logo > a {
+.header__logo,
+.footer__logo,
+.header__logo > a {
   font-family: "Shrikhand", cursive;
 }
 
@@ -112,7 +114,8 @@ a {
   padding: 0 22px;
   border: none;
   color: white;
-  font-size: 1em;
+  font-size: 0.9em;
+  font-weight: 600;
   background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.274);
 }
@@ -200,13 +203,14 @@ a {
 
 .card {
   background-color: white;
-  border-radius: 20px;
   position: relative;
+  overflow: hidden;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
 }
 .card__img {
   height: 174px;
   width: 100%;
-  border-radius: 20px 20px 0 0;
   object-fit: cover;
   object-position: 50% 100%;
   display: block;
@@ -245,6 +249,8 @@ a {
   padding-bottom: 8px;
 }
 
+/* || End Main */
+/* || Start Footer */
 .footer {
   min-height: 197px;
   padding: 27px 20px;
@@ -261,7 +267,6 @@ a {
   font-size: 18px;
 }
 .footer__list {
-  list-style: none;
   line-height: 25px;
   margin-top: 15px;
 }
@@ -277,6 +282,116 @@ a {
   font-size: 13px;
 }
 
-/* || End Main */
+/* || End Footer */
+.menupage__img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  object-position: 50% 45%;
+}
+@media screen and (min-width: 600px) {
+  .menupage__img {
+    height: calc(250px + 10vw);
+  }
+}
+
+.header__logo {
+  padding-top: 7px;
+}
+.header__backArrow {
+  position: absolute;
+  z-index: 2;
+  top: 23px;
+  left: 23px;
+  font-size: 20px;
+}
+
+.menu {
+  padding: 35px 14px 70px 14px;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+  position: relative;
+  margin: -35px auto 0 auto;
+  max-width: 600px;
+}
+@media screen and (min-width: 600px) {
+  .menu {
+    max-width: calc(600px + 10vw);
+    margin-bottom: 95px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin-top: -7vw;
+  }
+}
+.menu__title {
+  font-family: "Shrikhand", cursive;
+  margin: 0 8% 0 2%;
+  display: inline;
+  font-size: 28px;
+}
+.menu__like {
+  border: none;
+  padding: 0;
+  background-color: inherit;
+  font-size: 25px !important;
+  font-weight: 100 !important;
+}
+.menu__validation {
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 22px;
+  border: none;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 600;
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.274);
+  margin: 50px auto 0px auto;
+  display: block;
+}
+.menu__validation:hover {
+  filter: brightness(110%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.503);
+  cursor: pointer;
+}
+
+.mealType__title {
+  margin-left: 7px;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 24px;
+  margin-top: 44px;
+  font-weight: 300;
+}
+.mealType__title::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+}
+
+.menuItem {
+  background-color: #fff;
+  padding: 14px 23px 12px 11px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+.menuItem__header > h4 {
+  font-size: 18px;
+}
+.menuItem__header > p {
+  font-size: 15px;
+}
+.menuItem__price {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=style.css.map */
