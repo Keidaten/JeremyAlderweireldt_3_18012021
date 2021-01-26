@@ -162,7 +162,7 @@
         right: 12px;
     }
     &__like {
-        @include like_button;
+        @include heartIcon;
         padding-bottom: 8px;
     }
 }

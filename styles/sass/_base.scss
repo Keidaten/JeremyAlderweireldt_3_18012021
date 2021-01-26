@@ -77,7 +77,7 @@ a {
     padding: 0;
     background-color: inherit;
     font-size: 25px !important;
-    font-weight: 100 !important;
+    // font-weight: 100 !important;
 }
 
 @mixin button {
@@ -100,6 +100,36 @@ a {
 @mixin card_style {
     box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
+}
+
+@mixin heartIcon {
+    border: none;
+    padding: 0;
+    background-color: inherit;
+    font-size: 25px !important;
+    padding-bottom: 8px;
+    &:focus {
+        outline: none;
+    }
+    &--bg {
+        background-image: linear-gradient($primary-color, $secondary-color);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        opacity: 0;
+        transition: opacity 1000ms;
+    }
+    &--noBg {
+        position: absolute;
+        z-index: 5;
+        background-color: white;
+        &:hover {
+            opacity: 0;
+        }
+    }
+    &--noBg:hover + .card__like--bg {
+        opacity: 1;
+    }
 }
 
 /* || End Global */

@@ -245,8 +245,30 @@ a {
   padding: 0;
   background-color: inherit;
   font-size: 25px !important;
-  font-weight: 100 !important;
   padding-bottom: 8px;
+  padding-bottom: 8px;
+}
+.card__like:focus {
+  outline: none;
+}
+.card__like--bg {
+  background-image: linear-gradient(#9356dc, #ff79da);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+.card__like--noBg {
+  position: absolute;
+  z-index: 5;
+  background-color: white;
+}
+.card__like--noBg:hover {
+  opacity: 0;
+}
+.card__like--noBg:hover + .card__like--bg {
+  opacity: 1;
 }
 
 /* || End Main */
@@ -322,6 +344,16 @@ a {
     margin-top: -7vw;
   }
 }
+@media screen and (min-width: 600px) {
+  .menu__header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+}
+.menu__header::before {
+  content: "";
+}
 .menu__title {
   font-family: "Shrikhand", cursive;
   margin: 0 8% 0 2%;
@@ -333,7 +365,29 @@ a {
   padding: 0;
   background-color: inherit;
   font-size: 25px !important;
-  font-weight: 100 !important;
+  padding-bottom: 8px;
+}
+.menu__like:focus {
+  outline: none;
+}
+.menu__like--bg {
+  background-image: linear-gradient(#9356dc, #ff79da);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+.menu__like--noBg {
+  position: absolute;
+  z-index: 5;
+  background-color: white;
+}
+.menu__like--noBg:hover {
+  opacity: 0;
+}
+.menu__like--noBg:hover + .card__like--bg {
+  opacity: 1;
 }
 .menu__validation {
   height: 50px;

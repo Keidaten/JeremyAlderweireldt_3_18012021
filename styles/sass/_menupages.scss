@@ -35,6 +35,14 @@
         margin-top: -7vw;
     }
     &__header {
+        @media screen and (min-width: 600px) {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+        &::before {
+            content: "";
+        }
     }
     &__title {
         font-family: $secondary-font;
@@ -43,7 +51,7 @@
         font-size: 28px;
     }
     &__like {
-        @include like_button;
+        @include heartIcon;
     }
     &__validation {
         @include button;
