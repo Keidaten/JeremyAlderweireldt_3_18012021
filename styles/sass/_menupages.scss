@@ -88,6 +88,10 @@
     display: flex;
     justify-content: space-between;
     @include card_style;
+    opacity: 0;
+    animation: itemPop 1s 100ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
     &__header {
         & > h4 {
             font-size: 18px;
@@ -100,5 +104,10 @@
         display: flex;
         align-items: flex-end;
         font-weight: 600;
+    }
+    @for $i from 1 to 11 {
+        &--delay#{$i} {
+            animation-delay: #{$i * 150}ms;
+        }
     }
 }

@@ -435,6 +435,10 @@ a {
   justify-content: space-between;
   box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
+  opacity: 0;
+  animation: itemPop 1s 100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 .menuItem__header > h4 {
   font-size: 18px;
@@ -446,6 +450,47 @@ a {
   display: flex;
   align-items: flex-end;
   font-weight: 600;
+}
+.menuItem--delay1 {
+  animation-delay: 150ms;
+}
+.menuItem--delay2 {
+  animation-delay: 300ms;
+}
+.menuItem--delay3 {
+  animation-delay: 450ms;
+}
+.menuItem--delay4 {
+  animation-delay: 600ms;
+}
+.menuItem--delay5 {
+  animation-delay: 750ms;
+}
+.menuItem--delay6 {
+  animation-delay: 900ms;
+}
+.menuItem--delay7 {
+  animation-delay: 1050ms;
+}
+.menuItem--delay8 {
+  animation-delay: 1200ms;
+}
+.menuItem--delay9 {
+  animation-delay: 1350ms;
+}
+.menuItem--delay10 {
+  animation-delay: 1500ms;
+}
+
+@keyframes itemPop {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
