@@ -248,6 +248,9 @@ a {
   padding-bottom: 8px;
   padding-bottom: 8px;
 }
+.card__like:hover {
+  cursor: pointer;
+}
 .card__like:focus {
   outline: none;
 }
@@ -367,6 +370,9 @@ a {
   font-size: 25px !important;
   padding-bottom: 8px;
 }
+.menu__like:hover {
+  cursor: pointer;
+}
 .menu__like:focus {
   outline: none;
 }
@@ -439,12 +445,21 @@ a {
   animation: itemPop 1s 100ms;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
+  overflow: hidden;
+}
+.menuItem__header {
+  margin-right: auto;
 }
 .menuItem__header > h4 {
   font-size: 18px;
 }
 .menuItem__header > p {
   font-size: 15px;
+}
+.menuItem__header, .menuItem__header > h4, .menuItem__header > p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menuItem__price {
   display: flex;
@@ -480,6 +495,41 @@ a {
 }
 .menuItem--delay10 {
   animation-delay: 1500ms;
+}
+.menuItem__basket {
+  background: #99e2d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  width: 58px;
+  margin: -15px;
+  margin-right: -81px;
+  margin-left: 11px;
+  transition: margin-right 0.4s linear;
+}
+.menuItem__checkIcon {
+  color: #99e2d0;
+  transform: rotate(-360deg);
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  padding-top: 5px;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 50%;
+}
+.menuItem:hover {
+  cursor: pointer;
+}
+.menuItem:hover .menuItem__basket {
+  margin-right: -23px;
+}
+.menuItem:hover .menuItem__checkIcon {
+  transform: rotate(0);
+  transition: transform 0.3s linear;
+  transition-delay: 0.1s;
 }
 
 @keyframes itemPop {
