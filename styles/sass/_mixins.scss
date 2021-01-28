@@ -37,14 +37,12 @@
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        // opacity: 0;
         transform: scale(0);
         transition: transform 1000ms;
     }
     &--noBg {
         position: absolute;
         z-index: 5;
-        // background-color: white;
         &:hover {
             transition: opacity 582.5160079892627ms ease 414.5888780085761ms;
             opacity: 0;

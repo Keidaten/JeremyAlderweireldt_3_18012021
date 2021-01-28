@@ -1,3 +1,52 @@
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    background-color: hsla(0, 0%, 100%, 0.589);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: showLoader 0s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.spinner {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid $primary-color;
+    animation: spin 2s linear infinite;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+    }
+    &::before {
+        border: 4px solid transparent;
+        border-top-color: $secondary-color;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        animation: spin 3.5s linear infinite;
+    }
+    &::after {
+        border: 4px solid transparent;
+        border-top-color: $tertiary-color;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        animation: spin 1.75s linear infinite;
+    }
+}
+
 /* || Start Header */
 .header {
     &__logo {
@@ -55,8 +104,7 @@
 
 .operation {
     padding: 50px 20px 25px 20px;
-    &__title {
-    }
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -99,8 +147,7 @@
             background-color: lighten($primary-color, 35%);
         }
     }
-    &__icon {
-    }
+
     &__indication {
         padding: 0 10px;
     }

@@ -1,3 +1,23 @@
+@keyframes showLoader {
+    0% {
+        transform: translateX(0px);
+        // opacity: 0;
+    }
+    100% {
+        transform: translateX(-7777px);
+        // opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes itemPop {
     0% {
         transform: translateY(30px);
