@@ -53,10 +53,6 @@ a {
   font-family: "Shrikhand", cursive;
 }
 
-.home section {
-  padding-top: 50px;
-}
-
 .container {
   max-width: 1280px;
   margin: auto;
@@ -97,7 +93,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 0px !important;
+  padding-top: 0px;
 }
 .header__title {
   margin: 0 50px;
@@ -128,8 +124,7 @@ a {
 /* || End Header */
 /* || Start Main */
 .operation {
-  padding: 0 20px;
-  padding-bottom: 25px;
+  padding: 50px 20px 25px 20px;
 }
 .operation__list {
   display: flex;
@@ -180,8 +175,7 @@ a {
 }
 
 .results {
-  padding: 0 20px;
-  padding-bottom: 64px;
+  padding: 50px 20px 64px 20px;
   background: #f6f6f6;
 }
 .results__title {
@@ -302,8 +296,8 @@ a {
     margin-top: 45px;
   }
 }
-.footer__icons {
-  width: 22px !important;
+.footer__icons.fas {
+  width: 22px;
   font-size: 13px;
 }
 

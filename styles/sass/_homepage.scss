@@ -33,7 +33,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 0px !important;
+        padding-top: 0px;
     }
     &__title {
         margin: 0 50px;
@@ -54,8 +54,7 @@
 /* || Start Main */
 
 .operation {
-    padding: 0 20px;
-    padding-bottom: 25px;
+    padding: 50px 20px 25px 20px;
     &__title {
     }
     &__list {
@@ -107,8 +106,7 @@
     }
 }
 .results {
-    padding: 0 20px;
-    padding-bottom: 64px;
+    padding: 50px 20px 64px 20px;
     background: $secondary-background-color;
     &__title {
         margin-bottom: 25px;
@@ -191,8 +189,8 @@
             margin-top: 45px;
         }
     }
-    &__icons {
-        width: 22px !important;
+    &__icons.fas {
+        width: 22px;
         font-size: 13px;
     }
 }
