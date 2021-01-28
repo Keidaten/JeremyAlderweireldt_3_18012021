@@ -238,7 +238,7 @@ a {
   border: none;
   padding: 0;
   background-color: inherit;
-  font-size: 25px !important;
+  font-size: 25px;
   padding-bottom: 8px;
   padding-bottom: 8px;
 }
@@ -253,19 +253,20 @@ a {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  opacity: 0;
-  transition: opacity 1000ms;
+  transform: scale(0);
+  transition: transform 1000ms;
 }
 .card__like--noBg {
   position: absolute;
   z-index: 5;
-  background-color: white;
 }
 .card__like--noBg:hover {
+  transition: opacity 582.5160079893ms ease 414.5888780086ms;
   opacity: 0;
 }
 .card__like--noBg:hover + .card__like--bg {
   opacity: 1;
+  transform: scale(1);
 }
 
 /* || End Main */
@@ -361,7 +362,7 @@ a {
   border: none;
   padding: 0;
   background-color: inherit;
-  font-size: 25px !important;
+  font-size: 25px;
   padding-bottom: 8px;
 }
 .menu__like:hover {
@@ -375,19 +376,20 @@ a {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  opacity: 0;
-  transition: opacity 1000ms;
+  transform: scale(0);
+  transition: transform 1000ms;
 }
 .menu__like--noBg {
   position: absolute;
   z-index: 5;
-  background-color: white;
 }
 .menu__like--noBg:hover {
+  transition: opacity 582.5160079893ms ease 414.5888780086ms;
   opacity: 0;
 }
 .menu__like--noBg:hover + .card__like--bg {
   opacity: 1;
+  transform: scale(1);
 }
 .menu__validation {
   height: 50px;
