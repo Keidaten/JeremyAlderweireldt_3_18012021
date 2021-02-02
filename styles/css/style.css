@@ -291,6 +291,7 @@ a {
   background-color: inherit;
   font-size: 25px;
   padding-bottom: 8px;
+  display: flex;
   padding-bottom: 8px;
 }
 .card__like:hover {
@@ -415,6 +416,7 @@ a {
   background-color: inherit;
   font-size: 25px;
   padding-bottom: 8px;
+  display: flex;
 }
 .menu__like:hover {
   cursor: pointer;
