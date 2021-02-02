@@ -304,7 +304,6 @@ a {
   background-image: linear-gradient(#9356dc, #ff79da);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   transform: scale(0);
   transition: transform 1000ms;
 }
@@ -428,7 +427,6 @@ a {
   background-image: linear-gradient(#9356dc, #ff79da);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   transform: scale(0);
   transition: transform 1000ms;
 }

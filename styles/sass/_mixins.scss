@@ -37,7 +37,6 @@
         background-image: linear-gradient($primary-color, $secondary-color);
         color: transparent;
         -webkit-background-clip: text;
-        background-clip: text;
         transform: scale(0);
         transition: transform 1000ms;
     }
