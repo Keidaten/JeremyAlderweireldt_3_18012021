@@ -35,23 +35,26 @@
         margin-top: -7vw;
     }
     &__header {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
         @media screen and (min-width: 600px) {
-            display: flex;
             justify-content: space-evenly;
-            align-items: baseline;
-        }
-        &::before {
-            content: "";
+            &::before {
+                content: "";
+            }
         }
     }
     &__title {
         font-family: $secondary-font;
-        margin: 0 8% 0 2%;
+        margin: 0 0 0 2%;
         display: inline;
         font-size: 28px;
     }
     &__like {
         @include heartIcon;
+        margin-right: 12px;
+        margin-left: 12px;
     }
     &__validation {
         @include button;

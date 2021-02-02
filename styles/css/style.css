@@ -393,19 +393,22 @@ a {
     margin-top: -7vw;
   }
 }
+.menu__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
 @media screen and (min-width: 600px) {
   .menu__header {
-    display: flex;
     justify-content: space-evenly;
-    align-items: baseline;
   }
-}
-.menu__header::before {
-  content: "";
+  .menu__header::before {
+    content: "";
+  }
 }
 .menu__title {
   font-family: "Shrikhand", cursive;
-  margin: 0 8% 0 2%;
+  margin: 0 0 0 2%;
   display: inline;
   font-size: 28px;
 }
@@ -416,6 +419,8 @@ a {
   font-size: 25px;
   padding-bottom: 8px;
   display: flex;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 .menu__like:hover {
   cursor: pointer;
