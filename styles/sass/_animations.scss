@@ -1,19 +1,26 @@
 @keyframes showLoader {
     0% {
         transform: translateX(0px);
-        // opacity: 0;
     }
     100% {
         transform: translateX(-7777px);
-        // opacity: 1;
     }
 }
 
 @keyframes spin {
-    from {
+    0% {
         transform: rotate(0deg);
     }
-    to {
+    25% {
+        transform: rotate(95deg);
+    }
+    50% {
+        transform: rotate(173deg);
+    }
+    75% {
+        transform: rotate(278deg);
+    }
+    100% {
         transform: rotate(360deg);
     }
 }

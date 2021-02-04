@@ -593,10 +593,19 @@ a {
   }
 }
 @keyframes spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  25% {
+    transform: rotate(95deg);
+  }
+  50% {
+    transform: rotate(173deg);
+  }
+  75% {
+    transform: rotate(278deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
